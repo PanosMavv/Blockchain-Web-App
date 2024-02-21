@@ -1,0 +1,41 @@
+.notifications {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    list-style: none;
+}
+
+.notification {
+    width: 300px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.notification.show {
+    opacity: 1;
+}
+
+.notification.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.notification.error {
+    background-color: #ffcccc;
+}
+
+.notification.success {
+    background-color: #ccffcc;
+}
+
+.notification p {
+    margin: 0;
+    font-size: 14px;
+    color: #333333;
+    word-wrap: break-word;
+}
